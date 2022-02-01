@@ -5,12 +5,21 @@ header{
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  &:before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100vh;
+  }
 }
 .menu{
   width: 100%;
   height: 90px;
-  background: #00000066 0% 0% no-repeat padding-box;
+  background: #00000066 0 0 no-repeat padding-box;
   padding: 15px;
+  position: relative;
 }
 .navigation{
   display: flex;
@@ -25,5 +34,64 @@ header{
     @include tablet{
       display: flex;
     }
+    &__content{
+      text-transform: uppercase;
+      padding: 0 15px 0 15px;
+      font-weight: 500;
+      &:hover{
+        color: $main-buttons-color;
+      }
+    }
   }
+}
+.social__media__icon{
+  font-size: 2rem;
+  padding: 0 10px 0 10px;
+  transition: 1s;
+  &:hover{
+    color: $main-buttons-color;
+  }
+}
+.banner{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 870px;
+  text-align: center;
+  margin-top: 20vh;
+  &__title{
+    font-size: 10vw;
+    line-height: 13vw;
+    @include tablet {
+      font-size: 4.75rem;
+      line-height: 5.75rem;
+    }
+  }
+  &__description{
+    font-size: 5vw;
+    padding: 5vw 0 4vw 0;
+    @include tablet {
+      font-size: 2rem;
+      padding: 3.75rem 0 3.75rem 0;
+    }
+  }
+  &__buttons{
+    margin-top: 30px;
+  }
+  &__button{
+    margin: 0 10px 0 10px;
+  }
+}
+.break{
+  display: inline-block;
+  height: 5px;
+  width: 80px;
+  background-color: $main-buttons-color;
+  margin-top: 3.125rem;
+}
+
+a.special__button{
+  background-color: $accent-color;
+  color: black;
 }
