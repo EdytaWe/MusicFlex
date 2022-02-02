@@ -186,10 +186,10 @@ header:before {
 
 .break {
   display: inline-block;
-  height: 5px;
+  height: 3px;
   width: 80px;
   background-color: #673ab7;
-  margin-top: 3.125rem;
+  margin-top: 2.125rem;
 }
 
 a.special__button {
@@ -199,5 +199,69 @@ a.special__button {
 
 .discography {
   background-color: #140f26;
+}
+.discography__title {
+  font-size: 2.375rem;
+  line-height: 2.875rem;
+  padding: 100px 15px 0 15px;
+}
+@media screen and (min-width: 770px) {
+  .discography__title {
+    font-size: 3rem;
+  }
+}
+.discography__break {
+  margin-left: 15px;
+}
+.discography__description {
+  font-size: 1.375rem;
+  padding: 30px 0 50px 15px;
+}
+@media screen and (min-width: 770px) {
+  .discography__description {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 770px) {
+  .discography__article {
+    display: flex;
+  }
+}
+.discography__image {
+  width: 100%;
+  padding: 0 15px 15px 15px;
+}
+@media screen and (min-width: 770px) {
+  .discography__image {
+    width: 455px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 990px) {
+  .discography__image {
+    max-width: 1350px;
+    margin: 0 auto;
+    width: 555px;
+    margin: 0;
+  }
+}
+.discography__song {
+  display: flex;
+  margin-left: 15px;
+}
+
+.song__title {
+  margin-left: 20px;
+}
+.song__icons {
+  margin-right: 50px;
+  justify-content: flex-end;
+}
+.song__icon {
+  color: #e8cd20;
+  padding: 0 10px;
+}
+.song__drive {
+  color: #e8cd20;
 }
 /*# sourceMappingURL=style.css.map */
