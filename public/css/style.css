@@ -164,7 +164,7 @@ header:before {
 @media screen and (min-width: 770px) {
   .banner__title {
     font-size: 4.75rem;
-    line-height: 5.75rem;
+    line-height: 5rem;
   }
 }
 .banner__description {
@@ -178,7 +178,7 @@ header:before {
   }
 }
 .banner__buttons {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .banner__button {
   margin: 0 10px 0 10px;
@@ -197,13 +197,7 @@ a.special__button {
   color: black;
 }
 
-.button {
-  background-color: #673ab7;
-  font-size: 0.8125rem;
-  padding: 16px 36px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-  cursor: pointer;
+.discography {
+  background-color: #140f26;
 }
 /*# sourceMappingURL=style.css.map */
