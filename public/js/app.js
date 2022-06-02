@@ -17,6 +17,6 @@ drives.forEach((drive, index) => {
         }else{
             snd.autoplay = false;
         }
-        console.log(drive.firstElementChild);
+        console.log("dziala");
     });
 })

@@ -200,6 +200,10 @@ a.special__button {
 .discography {
   background-color: #140f26;
 }
+.discography__list {
+  width: 50%;
+  margin-left: 15px;
+}
 .discography__title {
   font-size: 2.375rem;
   line-height: 2.875rem;
@@ -222,8 +226,10 @@ a.special__button {
     font-size: 1.5rem;
   }
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 990px) {
   .discography__article {
+    max-width: 1350px;
+    margin: 0 auto;
     display: flex;
   }
 }
@@ -247,19 +253,29 @@ a.special__button {
 }
 .discography__song {
   display: flex;
+  justify-content: space-between;
   margin-left: 15px;
+}
+.discography__song__element {
+  display: flex;
+  justify-content: center;
+}
+.discography__underline {
+  height: 2px;
+  width: 100%;
+  margin: 20px 0px;
+  background-color: #e8cd20;
 }
 
 .song__title {
   margin-left: 20px;
 }
 .song__icons {
-  margin-right: 50px;
-  justify-content: flex-end;
+  padding-right: 50px;
 }
 .song__icon {
   color: #e8cd20;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 .song__drive {
   color: #e8cd20;
